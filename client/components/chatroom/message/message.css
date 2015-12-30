@@ -1,32 +1,3 @@
-/* CSS declarations go here */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-h1 {
-  margin: 0;
-  padding-left: 10px;
-  position: fixed;
-  top: 0;
-  height: 50px
-}
-
-#chat-history {
-  position: absolute;
-  background: #DDD;
-  margin: 0;
-  top: 50px;
-  bottom: 50px;
-  width: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-#user-select {
-  margin: 100px;
-}
 
 #chat-history .messages {
   list-style-type: none;
@@ -109,16 +80,4 @@ h1 {
   display: block;
   margin-bottom: 10px;
   color: #EEE;
-}
-
-#new-message input {
-  border: 0;
-  padding: 0;
-  font-size: 1.3em;
-  height: 50px;
-  position:fixed;
-  bottom: 0;
-  width: 100%;
-  padding-left: 10px;
-  box-sizing: border-box;
 }

@@ -1,0 +1,22 @@
+#chat-history {
+  position: absolute;
+  background: #DDD;
+  margin: 0;
+  top: 50px;
+  bottom: 50px;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#new-message input {
+  border: 0;
+  padding: 0;
+  font-size: 1.3em;
+  height: 50px;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
