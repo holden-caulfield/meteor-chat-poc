@@ -1,0 +1,124 @@
+/* CSS declarations go here */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  height: 50px
+}
+
+#chat-history {
+  position: absolute;
+  background: #DDD;
+  margin: 0;
+  top: 50px;
+  bottom: 50px;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#user-select {
+  margin: 100px;
+}
+
+#chat-history .messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#chat-history .messages li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#chat-history .messages li.outgoing {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: right;
+}
+
+#chat-history .messages li .bubble {
+  position:relative;
+  padding: 15px;
+  padding-top: 5px;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  width: auto;
+}
+
+#chat-history .messages li.outgoing .bubble {
+  background: #5a8f00;
+  margin-right: 20px;
+}
+
+#chat-history .messages li.incoming .bubble {
+  background: blue;
+  margin-left: 20px;
+}
+
+#chat-history .messages li .bubble:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  display: inline-block;
+  top: 0px;
+  width: 0;
+}
+
+#chat-history .messages li.incoming .bubble:before {
+  border-color: blue transparent;
+  left: -10px;
+  border-width: 20px 0 0 20px;
+}
+
+#chat-history .messages li.outgoing .bubble:before {
+  border-color: #5a8f00 transparent;
+  right: -10px;
+  border-width: 20px 20px 0 20px;
+}
+
+#chat-history .messages li .timestamp {
+  color: gray;
+  font-size: 0.8em;
+  display: block;
+}
+
+#chat-history .messages li.incoming .timestamp {
+  padding-left: 20px;
+}
+
+#chat-history .messages li.outgoing .timestamp {
+  padding-right: 20px;
+}
+
+#chat-history .messages li .author {
+  font-size: 0.8em;
+  display: block;
+  margin-bottom: 10px;
+  color: #EEE;
+}
+
+#new-message input {
+  border: 0;
+  padding: 0;
+  font-size: 1.3em;
+  height: 50px;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}

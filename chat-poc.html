@@ -1,0 +1,50 @@
+<head>
+  <title>chat-poc</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1,
+        maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+</head>
+
+<body>
+  {{>main}}
+</body>
+
+<template name="main">
+  {{#if user}}
+    <h1>Welcome {{user}}</h1>
+    {{>chatroom}}
+  {{else}}
+    <h1>Chat POC!</h1>
+    {{>userSelect}}
+  {{/if}}
+</template>
+
+<template name="userSelect">
+  <section id="user-select">
+    <form id="user-form">
+      <input type="text" name="user" placeholder="enter your username" />
+      <button type="submit">Start!</button>
+    </form>
+  </section>
+</template>
+
+<template name="chatroom">
+  <section id="chat-history">
+    <ul class="messages">
+      {{#each messages}}
+        {{> message}}
+      {{/each}}
+    </ul>
+  </section>
+  <div>
+    <form id="new-message">
+      <input type="text" name="message" placeholder="type a message" />
+    </form>
+  </div>
+</template>
+
+<template name="message">
+  <li class="{{typeOfMessage author}}">
+    <span class="bubble"><span class="author"><strong>{{author}}</strong> says:</span>{{text}}</span>
+    <span class="timestamp">{{formatDate createdAt}}</span>
+  </li>
+</template>
