@@ -1,0 +1,14 @@
+<template name="chatroom">
+  <section id="chat-history">
+    <ul class="messages">
+      {{#each messages}}
+        {{> message}}
+      {{/each}}
+    </ul>
+  </section>
+  <div>
+    <form id="new-message">
+      <input type="text" name="message" placeholder="type a message" />
+    </form>
+  </div>
+</template>

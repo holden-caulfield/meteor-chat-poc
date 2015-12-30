@@ -1,0 +1,9 @@
+<template name="main">
+  {{#if user}}
+    <h1>Welcome {{user}}</h1>
+    {{>chatroom}}
+  {{else}}
+    <h1>Chat POC!</h1>
+    {{>userSelect}}
+  {{/if}}
+</template>

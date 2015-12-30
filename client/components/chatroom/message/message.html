@@ -1,0 +1,6 @@
+<template name="message">
+  <li class="{{typeOfMessage author}}">
+    <span class="bubble"><span class="author"><strong>{{author}}</strong> says:</span>{{text}}</span>
+    <span class="timestamp">{{formatDate createdAt}}</span>
+  </li>
+</template>
