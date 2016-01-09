@@ -6,16 +6,25 @@ Template.chatroom.events({
         Messages.insert({
             text: text,
             createdAt: new Date(), // current time
-            author: Session.get("user")
+            author: Session.get("user"),
+            room: Session.get("room").id
         });
 
         scrollChat()
         event.target.message.value = "";
+    },
+    'click a#back': function(event) {
+      event.preventDefault();
+      Session.set("room",undefined);
     }
 });
 
 Template.chatroom.helpers({
     messages: function() {
-        return Messages.find();
+      return Messages.find({room: Session.get("room").id});
+    },
+
+    roomName: function() {
+      return Session.get("room").label;
     }
 });
