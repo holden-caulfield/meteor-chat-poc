@@ -7,14 +7,13 @@ Template.chatroomList.helpers({
       let users = [Session.get("user"), presence.state.username];
       let label = presence.state.username;
       let roomId = users.sort().join("#");
-      return { id: roomId, label: label };
+      return { id: roomId, label: label, header: label };
     };
 
-    let generalLabel = function() {
-      return "All users (" + presences.count() + " online)";
-    }
+    let generalLabel = "Everyone (" + presences.count() + " online)";
+    let generalHeader = "Everyone";
 
-    let firstChatroom = {id: "ALL", label: generalLabel()};
+    let firstChatroom = {id: "ALL", label: generalLabel, generalHeader};
     let otherChatrooms = _.sortBy(presences.map(createChatroom), "label");
     let allChatrooms = [firstChatroom].concat(otherChatrooms);
 

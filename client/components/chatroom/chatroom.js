@@ -25,6 +25,6 @@ Template.chatroom.helpers({
     },
 
     roomName: function() {
-      return Session.get("room").label;
+      return Session.get("room").header;
     }
 });
