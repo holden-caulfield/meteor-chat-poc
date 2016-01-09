@@ -13,7 +13,7 @@ Template.chatroomList.helpers({
     let generalLabel = "Everyone (" + presences.count() + " online)";
     let generalHeader = "Everyone";
 
-    let firstChatroom = {id: "ALL", label: generalLabel, generalHeader};
+    let firstChatroom = {id: "ALL", label: generalLabel, header: generalHeader};
     let otherChatrooms = _.sortBy(presences.map(createChatroom), "label");
     let allChatrooms = [firstChatroom].concat(otherChatrooms);
 
