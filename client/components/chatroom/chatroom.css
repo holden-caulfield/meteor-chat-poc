@@ -1,12 +1,5 @@
 #chat-history {
-  position: absolute;
-  background: #DDD;
-  margin: 0;
-  top: 50px;
   bottom: 50px;
-  width: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 #new-message input {

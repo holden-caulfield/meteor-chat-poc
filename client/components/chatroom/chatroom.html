@@ -1,6 +1,6 @@
 <template name="chatroom">
-  <h1>{{roomName}} <a href="#" id="back">Back</a></h1>
-  <section id="chat-history">
+  <h1 class="topbar">{{roomName}} <a href="#" id="back" class="backlink">Back</a></h1>
+  <section id="chat-history" class="scrollable">
     <ul class="messages">
       {{#each messages}}
         {{> message}}

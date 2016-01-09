@@ -12,13 +12,13 @@ h1.topbar {
   top: 0;
   height: 50px;
   background-color: #122C2E;
-  color: white;
+  color: #17B290;
   width: 100%;
 }
 
 .scrollable {
   position: absolute;
-  background: #DDD;
+  background: #DAE6E3;
   margin: 0;
   top: 50px;
   bottom: 0;
@@ -34,4 +34,15 @@ h1.topbar {
   padding: 20px;
   margin: 0;
   border-bottom: 1px solid #DDD;
+}
+
+.backlink {
+  color: #17B290;
+  text-decoration: none;
+  font-size: 0.6em;
+  font-weight: normal;
+  position: absolute;
+  left:10px;
+  top: 0;
+  line-height: 50px;
 }

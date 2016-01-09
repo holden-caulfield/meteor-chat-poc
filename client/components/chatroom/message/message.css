@@ -22,22 +22,24 @@
   padding: 15px;
   padding-top: 5px;
   margin: 5px;
-  color: #FFF;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   display: inline-block;
   width: auto;
+  color: black;
 }
 
 #chat-history .messages li.outgoing .bubble {
-  background: #5a8f00;
+  background: #17B290;
   margin-right: 20px;
+  box-shadow: -2px 3px 2px 1px #122C2E;
 }
 
 #chat-history .messages li.incoming .bubble {
-  background: blue;
+  background: #AAA;
   margin-left: 20px;
+  box-shadow: 2px 3px 2px 1px #333;
 }
 
 #chat-history .messages li .bubble:before {
@@ -50,34 +52,34 @@
 }
 
 #chat-history .messages li.incoming .bubble:before {
-  border-color: blue transparent;
+  border-color: #AAA transparent;
   left: -10px;
   border-width: 20px 0 0 20px;
 }
 
 #chat-history .messages li.outgoing .bubble:before {
-  border-color: #5a8f00 transparent;
+  border-color: #17B290 transparent;
   right: -10px;
   border-width: 20px 20px 0 20px;
 }
 
 #chat-history .messages li .timestamp {
-  color: gray;
+  color: #666;
   font-size: 0.8em;
   display: block;
+  padding-top: 5px;
 }
 
 #chat-history .messages li.incoming .timestamp {
-  padding-left: 20px;
+  padding-left: 22px;
 }
 
 #chat-history .messages li.outgoing .timestamp {
-  padding-right: 20px;
+  padding-right: 22px;
 }
 
 #chat-history .messages li .author {
   font-size: 0.8em;
   display: block;
   margin-bottom: 10px;
-  color: #EEE;
 }
