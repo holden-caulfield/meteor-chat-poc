@@ -4,10 +4,34 @@ body {
   font-family: sans-serif;
 }
 
-/*h1 {
+h1.topbar {
+  padding-top: 5px;
   margin: 0;
-  padding-left: 10px;
+  text-align: center;
   position: fixed;
   top: 0;
-  height: 50px
-}*/
+  height: 50px;
+  background-color: #122C2E;
+  color: white;
+  width: 100%;
+}
+
+.scrollable {
+  position: absolute;
+  background: #DDD;
+  margin: 0;
+  top: 50px;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-padding-start: 0;
+}
+
+.list-item {
+  background-color: white;
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #DDD;
+}

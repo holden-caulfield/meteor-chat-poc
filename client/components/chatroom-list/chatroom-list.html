@@ -1,7 +1,6 @@
 <template name="chatroomList">
-  <br/>
-  <br/>
-  <ul id="chatroom-list">
+  <h1 class="topbar">Chatrooms</h1>
+  <ul id="chatroom-list" class="scrollable">
     {{#each chatrooms}}
       {{> chatroomItem}}
     {{/each}}
